@@ -44,7 +44,7 @@ public class StopRussia {
                             Long counter = counterMap.get(link);
                             counterMap.put(link, ++counter);
                             if (counter % 100 == 0) {
-                                System.out.println("10 requests has been sent to " + link + ", total: " + counter);
+                                System.out.println("100 requests has been sent to " + link + ", total: " + counter);
                             }
                         } else {
                             counterMap.put(link, 1L);
