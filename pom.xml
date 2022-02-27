@@ -20,6 +20,8 @@
         <launch4j.maven.plugin.version>2.1.2</launch4j.maven.plugin.version>
         <maven.jar.plugin.version>3.2.2</maven.jar.plugin.version>
         <maven.shade.plugin.version>3.2.4</maven.shade.plugin.version>
+        <javafx.version>18-ea+1</javafx.version>
+        <javafx.maven.plugin.version>8.8.3</javafx.maven.plugin.version>
     </properties>
 
     <dependencies>
@@ -45,6 +47,18 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-graphics</artifactId>
+            <version>${javafx.version}</version>
         </dependency>
     </dependencies>
 

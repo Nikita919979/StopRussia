@@ -24,6 +24,7 @@ public class StopRussia {
             .build();
 
     public static void main(String[] args) throws Exception {
+
         ObjectMapper objectMapper = new ObjectMapper();
         Map<String, Object> resources;
         try (InputStream resourceInputStream = Thread.currentThread().getContextClassLoader()
@@ -49,7 +50,7 @@ public class StopRussia {
                         } else {
                             counterMap.put(link, 1L);
                         }
-                        Thread.sleep(100);
+                        Thread.sleep(75);
                     } catch (Exception e) {
                         System.out.println("Error " + e + ", link: " + link + ", thread will be sleeping for 1 min");
                         try {
